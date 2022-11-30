@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export const LocationHome = ({ location }) => {
+export const LocationHome = ({ location, onAddFavorite, isFavorite, deleteFav }) => {
 
 
 
@@ -18,7 +18,7 @@ export const LocationHome = ({ location }) => {
             <div className="card-body"> {/* Aquí van los botones de la carta: ir al personaje y favoritos */}
                 <Link to={`/locextend/${location.id}`} className="card-link">¡Quiero más!</Link>
                 <br></br>
-                <Link to="" onclick= {() => onAddFavorite(location.id)}  className="card-link"> I love´t!</Link>
+                { !isFavorite ? (<Link to="" onClick= {() => onAddFavorite(location)} className="card-link"> I love´t!</Link>) : (<Link to="" onClick= {() => deleteFav(location)} className="card-link"> I hate´t!</Link>)}
             </div>
         </div>
 

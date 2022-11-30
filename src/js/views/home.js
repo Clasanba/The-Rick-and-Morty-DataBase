@@ -3,63 +3,64 @@ import "../../styles/home.css";
 import { CharactersHome } from "../component/home-characters";
 import { LocationHome } from "../component/home-location"
 
-const Home = () => {
-	const [characters, setcharacters] = useState([]);  {/* todo lo relacionado con el apartado personajes */ } {/* llamada a la API */} {/* actualización de la variable characters */}
+
+const Home = ({favorites, setFavorites}) => {
+
+	const addFavorites = ((characterOrLocation) =>{
+		    
+			setFavorites([...favorites, characterOrLocation])
+		 
+		})
+
+	const deleteFavorites = (characterOrLocation)=>{
+		const index = favorites.indexOf(characterOrLocation)
+		favorites.splice(index,1);
+		setFavorites([...favorites])
+	}
+
+	const [characters, setCharacters] = useState([]);  {/* todo lo relacionado con el apartado personajes */ } {/* llamada a la API */} {/* actualización de la variable characters */}
 	useEffect(
 		() => {
 			fetch("https://rickandmortyapi.com/api/character")  
 				.then(response => response.json())
 				.then(data => {
-					setcharacters(data.results)          
+					setCharacters(data.results)          
 					console.log(data);
 				})
 		}
 		, []); {/* [] para que se ejecute solo una vez cuando cargue la pagina */}
 
-	const characterHtml = characters.map((character, index) => { 
-		return <CharactersHome character={character} key={index} />
-	}) 
 
-	const [locations, setlocations] = useState([]); {/* todo lo relacionado con el apartado lugares */ }
+	const [locations, setLocations] = useState([]); {/* todo lo relacionado con el apartado lugares */ }
 	useEffect(
 		() => {
 			fetch("https://rickandmortyapi.com/api/location")
 				.then(response => response.json())
 				.then(data => {
-					setlocations(data.results)
+					setLocations(data.results)
 					console.log(data);
 				})
 		}
 
 		, [])
 
-	const locationHtml = locations.map((location, index) => {
-		return <LocationHome location={location} key={index} />
-	})
-
-	{/*const [favorites, setfavorites] = useState([])   
-	
-	const addFavorites (params) =>{
-			setfavorites([...favorites,favorite.character.index.value])
-		 
-		} */}
-	
-
-
-
-
 	return <div className=" mt-5 ">
+		
 		<div className="text-left">
 			<h1>Personajes</h1>
 		</div>
 		<div className="cardCharacters text-center row row-cols-2 row-cols-lg-5 g-2 g-lg-3 w-50 h-50 m-auto ">
-			{characterHtml}
+			{characters.map((character, index) => { 
+				return <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} />
+			})}
 		</div>
 		<div className="text-left">
 			<h1>Lugares</h1>
 		</div>
 		<div className="cardCharacters text-center row row-cols-2 row-cols-lg-5 g-2 g-lg-3 w-50 h-50 m-auto ">
-			{locationHtml}
+			{locations.map((location, index) => {
+				return <LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} />
+			})}
 		</div>
 	</div>
 };

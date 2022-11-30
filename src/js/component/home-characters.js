@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export const CharactersHome = ({ character }) => {
-
+export const CharactersHome = ({ character, onAddFavorite, isFavorite, deleteFav }) => {
 
 
     return (<>
@@ -20,7 +19,8 @@ export const CharactersHome = ({ character }) => {
             <div className="card-body"> {/* Aquí van los botones de la carta: ir al personaje y favoritos */}
                 <Link to={`/charextend/${character.id}`} className="card-link">¡Quiero más!</Link>
                 <br></br>
-                <Link to="" onclick= {() => onAddFavorite(character.id)} className="card-link"> I love´t!</Link>
+                { !isFavorite ? (<Link to="" onClick= {() => onAddFavorite(character)} className="card-link"> I love´t!</Link>) : (<Link to="" onClick= {() => deleteFav(character)} className="card-link"> I hate´t!</Link>)}
+                
             </div>
         </div>
 
