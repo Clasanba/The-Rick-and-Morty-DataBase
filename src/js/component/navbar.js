@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import layout from "../layout";
 
 
-export const Navbar = ({favorites, deleteFavorites,toCharacter,toLocation}) => {
+export const Navbar = ({favorites, deleteFavorites, goSomePlace}) => {
 
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
@@ -19,7 +20,7 @@ export const Navbar = ({favorites, deleteFavorites,toCharacter,toLocation}) => {
 						{
 							favorites.map ((favorite, i)=>{ 
 								return	(
-									<li key={i}><Link to={toCharacter} className="dropdown-item">{favorite.name}</Link><button type="button" className=" btn-delete" aria-label="Delete" onClick={() => deleteFavorites(i)}></button></li>
+									<li key={i}><Link  to="" onClick= {() => goSomePlace} className="dropdown-item">{favorite.name}</Link><button type="button" className=" btn-delete" aria-label="Delete" onClick={() => deleteFavorites(i)}></button></li>
 									)
 							})
 						}

@@ -26,16 +26,21 @@ const deleteFavorites = (characterOrLocation)=>{
 	favorites.splice(index,1);
 	setFavorites([...favorites])
 }
-<Link to={`/charextend/${character.id}`} className="card-link">¡Quiero más!</Link>;
-<Link to={`/locextend/${location.id}`} className="card-link">¡Quiero más!</Link>
+
+
+const linkSomePlace = ()=> {
+	if (favorites.id === favorites.gender){<Link to={`/charextend/${character.id}`} className="card-link"></Link>}else {
+		<Link to={`/locextend/${location.id}`} className="card-link"></Link>
+	}
+}
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
 				
-					<Navbar  favorites={favorites} deleteFavorites ={deleteFavorites} toCharacter={`/charextend/${character.id}`}  toLocation={`/locextend/${location.id}`}/>
+					<Navbar favorites={favorites} deleteFavorites ={deleteFavorites} />
 					<Switch>
 						<Route exact path={"/"}>
-							<Home favorites={favorites} setFavorites={setFavorites}/>
+							<Home favorites={favorites} setFavorites={setFavorites} goSomePlace={linkSomePlace}/>
 						</Route>
 						<Route exact path={"/charextend/:id"}>
 							<CharactersExtended/>
