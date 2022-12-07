@@ -4,6 +4,9 @@ import layout from "../layout";
 
 
 export const Navbar = ({favorites, deleteFavorites, goSomePlace}) => {
+	const linkSomePlace = ()=> {
+		if (favorites === favorites.gender){<p>url personaje : {character.url}</p>}else { <p>URL Lugares : {location.url}</p>}
+	}
 
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
@@ -20,7 +23,7 @@ export const Navbar = ({favorites, deleteFavorites, goSomePlace}) => {
 						{
 							favorites.map ((favorite, i)=>{ 
 								return	(
-									<li key={i}><Link  to="" onClick= {() => goSomePlace} className="dropdown-item">{favorite.name}</Link><button type="button" className=" btn-delete" aria-label="Delete" onClick={() => deleteFavorites(i)}></button></li>
+									<li key={i} ><p className="card-title">{goSomePlace}</p><button type="button" className=" btn-delete" aria-label="Delete" onClick={() => deleteFavorites(i)}>X</button></li>
 									)
 							})
 						}
