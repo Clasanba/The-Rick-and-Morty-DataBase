@@ -22,7 +22,7 @@ const LocationsExtended = () => {
 
 
     return <div className=" mt-5 ">
-        <LocatExtend locExtended={locExtended} />
+        <LocatExtend location={locExtended} />
     </div>
 };
 

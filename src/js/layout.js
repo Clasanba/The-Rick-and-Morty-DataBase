@@ -27,10 +27,6 @@ const deleteFavorites = (characterOrLocation)=>{
 	setFavorites([...favorites])
 }
 
-
-const linkSomePlace = ()=> {
-	if (favorites === favorites.gender){<p>url personaje : </p>}else { <p>URL Lugares : </p>}
-}
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
@@ -38,7 +34,7 @@ const linkSomePlace = ()=> {
 					<Navbar favorites={favorites} deleteFavorites ={deleteFavorites} />
 					<Switch>
 						<Route exact path={"/"}>
-							<Home favorites={favorites} setFavorites={setFavorites} goSomePlace={linkSomePlace()}/>
+							<Home favorites={favorites} setFavorites={setFavorites}/>
 						</Route>
 						<Route exact path={"/charextend/:id"}>
 							<CharactersExtended/>
