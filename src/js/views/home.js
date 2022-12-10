@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/home.css";
+import "../../styles/index.css";
 import { CharactersHome } from "../component/home-characters";
 import { LocationHome } from "../component/home-location"
 
@@ -44,9 +45,9 @@ const Home = ({favorites, setFavorites}) => {
 
 		, [])
 
-	return <div className=" mt-5 ">
+	return <div className=" mt-5 bckgrnd">
 		
-		<div className="text-left">
+		<div className="text-left ">
 			<h1>Personajes</h1>
 		</div>
 		<div className="cardCharacters text-center row row-cols-2 row-cols-lg-5 g-2 g-lg-3 w-50 h-50 m-auto ">
