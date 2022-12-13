@@ -28,7 +28,7 @@ const deleteFavorites = (characterOrLocation)=>{
 }
 
 	return (
-		<div>
+		<div className="bckgrnd ">
 			<BrowserRouter basename={basename}>
 				
 					<Navbar favorites={favorites} deleteFavorites ={deleteFavorites} />

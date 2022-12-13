@@ -16,7 +16,7 @@ export const Navbar = ({favorites, deleteFavorites}) => {
 	
 
 	return (
-		<nav className="navbar mb-3 nvbr bckgrnd">
+		<nav className="navbar mb-3 ">
 			<Link to="/">
 			<img src={RickMortilogo} className="logo_navBar mt-1 ms-3 logo" />
 			</Link>

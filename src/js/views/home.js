@@ -45,7 +45,7 @@ const Home = ({favorites, setFavorites}) => {
 
 		, [])
 
-	return <div className=" mt-5 bckgrnd">
+	return <div className=" mt-5">
 		
 		<div className="text-left ">
 			<h1>Personajes</h1>
