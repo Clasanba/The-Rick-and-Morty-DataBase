@@ -50,10 +50,14 @@ const Home = ({favorites, setFavorites}) => {
 		<div className="text-left ">
 			<h1>Personajes</h1>
 		</div>
-		<div className="cardCharacters text-center row row-cols-2 row-cols-lg-5 g-2 g-lg-3 w-50 h-50 m-auto ">
+		<div className="container text-center cardCharacters">
+		<div className="row align-items-start">
+		<div className=" col-6 col-sm-3 m-auto ">
 			{characters.map((character, index) => { 
 				return <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} />
 			})}
+		</div>
+		</div>
 		</div>
 		<div className="text-left">
 			<h1>Lugares</h1>

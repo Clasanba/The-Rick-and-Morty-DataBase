@@ -6,7 +6,7 @@ export const LocationHome = ({ location, onAddFavorite, isFavorite, deleteFav })
 
 
     return (<>
-        <div className="card bckgrnd-cards">
+        <div className="card bckgrnd-cards bg-gradient">
         <img src="https://picsum.photos/300/300?random" className="card-img-top" alt="..." />
             <div className="card-body" >
                 <h5 className="card-title">{location.name}</h5>

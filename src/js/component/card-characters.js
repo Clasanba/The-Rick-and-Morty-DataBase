@@ -7,7 +7,7 @@ export const CharaExtend = ({ character }) => {
 
   return (
     <>
-      <div className="card mb-3 bckgrnd-cards">
+      <div className="card mb-3 bckgrnd-cards bg-gradient">
         <div className="row g-0">
           <div className="col-md-4">
             <img src={character.image} className="img-fluid rounded-start" alt="..." />

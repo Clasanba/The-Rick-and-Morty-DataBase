@@ -1,4 +1,16 @@
 .logo{
-    width: 8em;;
+    width: 5em;;
 }
 
+.nvbr{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.btnFavorite{
+    color:aqua;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    background-color: transparent;
+}

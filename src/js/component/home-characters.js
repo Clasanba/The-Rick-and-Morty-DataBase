@@ -6,8 +6,8 @@ export const CharactersHome = ({ character, onAddFavorite, isFavorite, deleteFav
 
     return (<>
 
-
-        <div className="card bckgrnd-cards">
+        
+        <div className="card bckgrnd-cards bg-gradient">
             <img src={character.image} className="card-img-top" alt="..." />
             <div className="card-body" >
                 <h5 className="card-title">{character.name}</h5>
