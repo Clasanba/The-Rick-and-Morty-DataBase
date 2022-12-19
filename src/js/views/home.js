@@ -52,11 +52,11 @@ const Home = ({favorites, setFavorites}) => {
 		</div>
 		<div className="container text-center cardCharacters">
 		<div className="row align-items-start">
-		<div className=" col-6 col-sm-3 m-auto ">
+		
 			{characters.map((character, index) => { 
-				return <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} />
+				return <div className=" col-md-3 cold-sm-5 "> <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
 			})}
-		</div>
+		
 		</div>
 		</div>
 		<div className="text-left">
