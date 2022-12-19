@@ -54,7 +54,7 @@ const Home = ({favorites, setFavorites}) => {
 		<div className="row align-items-start">
 		
 			{characters.map((character, index) => { 
-				return <div className=" col-md-3 cold-sm-5 "> <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
+				return <div className=" col-md-3 "> <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
 			})}
 		
 		</div>
@@ -62,10 +62,13 @@ const Home = ({favorites, setFavorites}) => {
 		<div className="text-left">
 			<h1>Lugares</h1>
 		</div>
-		<div className="cardCharacters text-center row row-cols-2 row-cols-lg-5 g-2 g-lg-3 w-50 h-50 m-auto ">
+		<div className="container text-center cardCharacters">
+		<div className="row align-items-start">
+		
 			{locations.map((location, index) => {
-				return <LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} />
+				return <div className="col-md-3 "><LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} /></div>
 			})}
+		</div>
 		</div>
 	</div>
 };

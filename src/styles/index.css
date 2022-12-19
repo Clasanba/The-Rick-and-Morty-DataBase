@@ -3,4 +3,15 @@
 }
 .bckgrnd-cards{
     background-color: rgb(140, 13, 39);
+    height: 600px;
+    
+}
+.btnLinks{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    
+}
+.img-card{
+    width: 100%;
 }
