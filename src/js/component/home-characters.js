@@ -7,12 +7,11 @@ export const CharactersHome = ({ character, onAddFavorite, isFavorite, deleteFav
     return (<>
 
         
-        <div className="card bckgrnd-cards bg-gradient mt-5">
+        <div className="card bckgrnd-cards-charact bg-gradient mt-5 rounded">
             <img src={character.image} className="card-img-top img-card" alt="..." />
             <div className="card-body" >
                 <h5 className="card-title fs-3 text-dark mb-4">{character.name}</h5>
-        
-                <div className="d-flex "><p className="card-text text-start ms-4 fw-bold me-3" >How?</p><p> {character.status}!</p></div>
+                <div className="d-flex "><p className="card-text text-start ms-4 fw-bold me-3" >How?</p><p>{character.status}!</p></div>
                 <div className="d-flex "><p className="card-text text-start ms-4  fw-bold me-3" >What?</p><p>{character.species}</p></div>
                 <div className="d-flex "><p className="card-text text-start ms-4 fw-bold me-2" >Where?</p><p>{character.origin.name}</p></div>
                 

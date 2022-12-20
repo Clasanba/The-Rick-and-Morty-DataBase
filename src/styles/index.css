@@ -1,9 +1,14 @@
 .bckgrnd, #app{
     background-color: rgba(77, 70, 70, 0.963);
 }
-.bckgrnd-cards{
+.bckgrnd-cards-charact{
     background-color: rgb(140, 13, 39);
     height: 600px;
+    
+}
+.bckgrnd-cards-locat{
+    background-color: rgb(140, 13, 39);
+    height: 300px;
     
 }
 .btnLinks{
@@ -14,4 +19,7 @@
 }
 .img-card{
     width: 100%;
+}
+.text-cards{
+    font-size: 1em;
 }
