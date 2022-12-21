@@ -47,7 +47,7 @@ const Home = ({favorites, setFavorites}) => {
 
 	return <div className=" mt-5">
 		
-		<div className="text-left ">
+		<div className="text-center ">
 			<h1>Personajes</h1>
 		</div>
 		<div className="container text-center cardCharacters">

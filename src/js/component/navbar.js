@@ -16,13 +16,15 @@ export const Navbar = ({favorites, deleteFavorites}) => {
 	
 
 	return (
-		<nav className="navbar nvbr mb-3 ">
-			<Link to="/">
-			<img src={RickMortilogo} className="logo_navBar mt-1 ms-3 logo" />
+		<nav className="navbar nvbr ">
+			<div>
+			<Link to="/" className=" btnlogo text-decoration-none fw-bold rounded-pill p-2">
+			Rick and Morty
 			</Link>
+			</div>
 			<div className="ml-auto">
 					<div className="dropdown">
-					<button className="btn  btnFavorite" disabled={favorites.length===0} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<button className="btn btnFavorite" disabled={favorites.length===0} type="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Favoritos {favorites.length}
 						</button>
 						<ul className="dropdown-menu  dropdown-menu-end list-group-flush">
