@@ -16,26 +16,26 @@ export const Navbar = ({favorites, deleteFavorites}) => {
 	
 
 	return (
-		<nav className="navbar nvbr ">
-			<div>
+		<nav className="navbar nvbr">
+			<div className="ms-2 ">
 			<Link to="/" className=" btnlogo text-decoration-none fw-bold rounded-pill p-2">
 			Rick and Morty
 			</Link>
 			</div>
-			<div className="ml-auto">
+			<div className="me-2">
 					<div className="dropdown">
-					<button className="btn btnFavorite" disabled={favorites.length===0} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<button className="btn btnFavorite text-decoration-none fw-bold rounded-pill p-2" disabled={favorites.length===0} type="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Favoritos {favorites.length}
 						</button>
-						<ul className="dropdown-menu  dropdown-menu-end list-group-flush">
-						{
+							<ul className="dropdown-menu list-group-flush luFavorite rounded rounded-3">
+							{
 							favorites.map ((favorite, i)=>{ 
 								return	(
-									<li key={i}  className=" "><Link to={linkSomePlace(favorite)}><p className="card-title">{favorite.name}</p></Link><button type="button" className=" fa-solid fa-delete-left border border-0 bg-transparent" aria-label="Delete" onClick={() => deleteFavorites(i)}></button></li>
+									<li key={i} className=" d-flex mx-2 liFavorite dropdown-item"><Link to={linkSomePlace(favorite)} className="text-decoration-none liFavorite"><p className="card-title ">{favorite.name}</p></Link><button type="button" className=" fa-regular fa-trash-can border border-0 bg-transparent" aria-label="Delete" onClick={() => deleteFavorites(i)}></button></li>
 									)
 							})
-						}
-						</ul>
+							}
+							</ul>
 					</div>
 			
 			</div>
