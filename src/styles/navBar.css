@@ -20,12 +20,26 @@
     background-color: transparent;
     background-color: rgba(255, 228, 196, 0.711);
 }
-.luFavorite{
-    background-color: rgba(255, 228, 196, 0.711);
+.btnFavorite:hover{
+    color: rgba(202, 2, 158, 0.933);
 }
+
+.luFavorite{
+    background-color: rgb(255, 228, 196);
+}
+
 .liFavorite{
     color:rgb(84, 4, 67); 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: transparent;
-    background-color: rgba(255, 228, 196, 0.711);
+}
+.liFavorite:hover{
+    background: transparent;
+    color: rgba(202, 2, 158, 0.933);
+}
+.btnDeleteFav{
+    color:rgb(84, 4, 67);
+}
+.btnDeleteFav:hover{
+    color: rgba(202, 2, 158, 0.933)
 }
