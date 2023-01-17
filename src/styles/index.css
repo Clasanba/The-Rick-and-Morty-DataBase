@@ -1,28 +1,36 @@
 .bckgrnd, #app{
-    background-color:rgba(247, 232, 214, 0.837);
+    background-color:  rgb(84, 4, 67);
 }
 .bckgrnd-cards-charact{
-    background-color: rgb(140, 13, 39);
-    height: 600px;
+    background-color: rgba(247, 232, 214, 0.433);
+    height: 325px;
+    color:  rgb(84, 4, 67);
     
 }
 .bckgrnd-cards-locat{
-    background-color: rgb(140, 13, 39);
+    background-color:  rgb(84, 4, 67);
     height: 300px;
-    
+    color:  rgb(187, 29, 153);
 }
 .btnLinks{
     display: flex;
-    justify-content: space-between;
+    justify-content:end;
     font-size: medium;
-    
 }
 .img-card{
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top:5%
 }
 .text-cards{
     font-size: 1em;
 }
 .box-card-extend{
-    background-color: rgb(140, 13, 39);
+    background-color: rgb(84, 4, 67);
+}
+.icons{
+    color: rgb(84, 4, 67);
+}
+.icons:hover{
+    color: rgb(166, 13, 143);
 }

@@ -47,29 +47,32 @@ const Home = ({favorites, setFavorites}) => {
 
 	return <div className=" mt-5">
 		
-		<div className="text-center ">
+		<div className="text-center titles fs-1 fw-bold text-uppercase">
 			<h1>Personajes</h1>
 		</div>
-		<div className="container text-center cardCharacters">
-		<div className="row align-items-start">
-		
-			{characters.map((character, index) => { 
-				return <div className=" col-md-3 "> <CharactersHome  isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
-			})}
+		<div className="container text-center cardCharacters ">
+			<div className="row align-items-start ">
+
+				{characters.map((character, index) => {
+					return <div className=" col-md-3 "> <CharactersHome isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
+				})}
+
+			</div>
 		
 		</div>
-		</div>
-		<div className="text-left">
+		
+		<div className="text-center titles fs-1 fw-bold text-uppercase">
 			<h1>Lugares</h1>
 		</div>
 		<div className="container text-center cardCharacters">
-		<div className="row align-items-start">
+			<div className="row align-items-start">
+
+				{locations.map((location, index) => {
+					return <div className="col-md-3 "><LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} /></div>
+				})}
+			</div>
+		</div>
 		
-			{locations.map((location, index) => {
-				return <div className="col-md-3 "><LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} /></div>
-			})}
-		</div>
-		</div>
 	</div>
 };
 

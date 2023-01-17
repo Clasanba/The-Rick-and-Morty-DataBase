@@ -7,18 +7,15 @@ export const CharactersHome = ({ character, onAddFavorite, isFavorite, deleteFav
     return (<>
 
         
-        <div className="card bckgrnd-cards-charact bg-gradient mt-5 rounded">
-            <img src={character.image} className="card-img-top img-card" alt="..." />
+        <div className="card bckgrnd-cards-charact bg-gradient mt-5 rounded rounded-4">
+            <img src={character.image} className="card-img-top img-card rounded-circle bg-gradient" alt="..." />
             <div className="card-body" >
-                <h5 className="card-title fs-3 text-dark mb-4">{character.name}</h5>
-                <div className="d-flex "><p className="card-text text-start ms-4 fw-bold me-3" >How?</p><p>{character.status}!</p></div>
-                <div className="d-flex "><p className="card-text text-start ms-4  fw-bold me-3" >What?</p><p>{character.species}</p></div>
-                <div className="d-flex "><p className="card-text text-start ms-4 fw-bold me-2" >Where?</p><p>{character.origin.name}</p></div>
-                
+            <Link to={`/charextend/${character.id}`}  className="text-decoration-none fs-3 icons">
+                <h5 className="card-title fs-3 bg-gradient rounded rounded-4 mb-1">{character.name}</h5>
+                </Link>
             </div>
-            <div className="card-body btnLinks"> {/* Aquí van los botones de la carta: ir al personaje y favoritos */}
-                { !isFavorite ? (<Link to="" onClick= {() => onAddFavorite(character)} className="card-link fa-regular fa-face-grin-hearts text-decoration-none fs-3 text-dark"></Link>) : (<Link to="" onClick= {() => deleteFav(character)} className="card-link fa-solid fa-poop text-decoration-none fs-3 text-dark"></Link>)}
-                <Link to={`/charextend/${character.id}`} className="card-link fa-solid fa-circle-plus text-decoration-none fs-3 text-dark"></Link>
+            <div className="card-body btnLinks"> 
+                { !isFavorite ? (<Link to="" onClick= {() => onAddFavorite(character)} className="card-link fa-regular fa-face-grin-hearts icons text-decoration-none fs-3 "></Link>) : (<Link to="" onClick= {() => deleteFav(character)} className="fa-regular fa-face-frown card-link text-decoration-none icons fs-3 "></Link>)}
             </div>
         </div>
 
