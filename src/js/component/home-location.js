@@ -15,8 +15,8 @@ export const LocationHome = ({ location, onAddFavorite, isFavorite, deleteFav })
                 </div>
             </Link>
             </div>
-            <div className="body-card">
-                <div className="d-flex text-cards"><p>{location.type}</p></div>
+            <div className="d-flex px-4">
+                <div className="text-cards "><p className="fst-normal">{location.type}</p></div>
                 <div className="card-body btnLinks"> 
                     {!isFavorite ? (<Link to="" onClick= {() => onAddFavorite(location)}
                     className="card-link fa-regular fa-face-grin-hearts icons text-decoration-none fs-3"></Link>) : 

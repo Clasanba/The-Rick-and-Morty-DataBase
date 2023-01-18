@@ -4,8 +4,18 @@
     
     
 }
-.titles{
-     color: rgba(247, 232, 214, 0.433)
+.title-character{
+     color: rgb(247, 244, 240);
+     padding: 15px;
+     width: 100%;
+     
     
+}
+.title-location{
+    color: rgb(247, 244, 240);
+    padding: 15px;
+    width: 82%;
+    margin-left: 9%;
+   
 }
 

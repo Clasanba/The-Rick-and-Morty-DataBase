@@ -4,13 +4,14 @@
 .bckgrnd-cards-charact{
     background-color: rgba(247, 232, 214, 0.433);
     height: 260px;
-    color:  rgb(84, 4, 67);
+    color: rgb(247, 244, 240);
     
 }
 .bckgrnd-cards-locat{
     background-color: rgba(247, 232, 214, 0.433);
     height: 150px;
     color:  rgb(84, 4, 67);
+    
 }
 .btnLinks{
     display: flex;
@@ -24,6 +25,7 @@
 }
 .text-cards{
     font-size: 1em;
+    padding: 16px;
 }
 .box-card-extend{
     background-color: rgb(84, 4, 67);
@@ -39,8 +41,19 @@
     width: 95%; 
     overflow: hidden;
     text-overflow: ellipsis;
+    background-color: transparent;
+
 }
 .body-card{
     display: flex;
     justify-content:space-around;
+}
+.icons-footer{
+    color: rgb(166, 13, 143);
+}
+.text-footer{
+    color:rgba(247, 232, 214, 0.433)
+}
+.text-footer:hover{
+    color: rgb(166, 13, 143);
 }
