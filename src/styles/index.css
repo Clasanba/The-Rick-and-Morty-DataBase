@@ -3,14 +3,14 @@
 }
 .bckgrnd-cards-charact{
     background-color: rgba(247, 232, 214, 0.433);
-    height: 325px;
+    height: 260px;
     color:  rgb(84, 4, 67);
     
 }
 .bckgrnd-cards-locat{
-    background-color:  rgb(84, 4, 67);
-    height: 300px;
-    color:  rgb(187, 29, 153);
+    background-color: rgba(247, 232, 214, 0.433);
+    height: 150px;
+    color:  rgb(84, 4, 67);
 }
 .btnLinks{
     display: flex;
@@ -18,8 +18,8 @@
     font-size: medium;
 }
 .img-card{
-    width: 50%;
-    margin-left: 25%;
+    width: 40%;
+    margin-left: 30%;
     margin-top:5%
 }
 .text-cards{
@@ -33,4 +33,14 @@
 }
 .icons:hover{
     color: rgb(166, 13, 143);
+}
+.title-card{
+    white-space: nowrap; 
+    width: 95%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.body-card{
+    display: flex;
+    justify-content:space-around;
 }
