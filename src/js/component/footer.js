@@ -5,9 +5,9 @@ import "../../styles/index.css";
 export const Footer = () => (
 	<footer className="footer mt-auto py-3 text-center">
 		<i class="fa-brands fa-pagelines icons-footer"></i>
-		<Link to="https://www.linkedin.com/in/clasanba-full-stack-developer/" className="text-decoration-none text-footer">
+		<a href="https://www.linkedin.com/in/clasanba-full-stack-developer/" target="_blank" className="text-decoration-none text-footer">
 		 <p> Made by Clasanba</p>
-		 </Link>
-		 <i class="fa-brands fa-pagelines icons-footer"></i>
+		</a>
+		<i class="fa-brands fa-pagelines icons-footer"></i>
 	</footer>
 );
