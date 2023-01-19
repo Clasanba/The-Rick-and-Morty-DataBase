@@ -12,8 +12,14 @@ const LocationsExtended = () => {
             fetch("https://rickandmortyapi.com/api/location/" + params.id)
                 .then(response => response.json())
                 .then(data => {
+                    return Promise.all(data.residents.map(resident => fetch(resident).then(response => response.json())))
+                    .then(residents => {
+                        data.residents=residents;
+                        return data;
+                    })
+                })
+                .then((data)=> {
                     setlocextended(data)
-                    console.log(data);
                 })
         }
         , [params.id]); {/* [] para que se ejecute solo una vez cuando cargue la pagina */ }

@@ -48,7 +48,7 @@ const Home = ({favorites, setFavorites}) => {
 	return <div className=" bg-gradient">
 		
 		<div className="">
-			<h1 className="text-center  title-character fs-1 fw-semibolder bg-gradient pt-5 text-capitalize">Personajes</h1>
+			<h1 className="text-center  title-character fs-1 fw-semibolder bg-gradient pt-5 text-capitalize">Characters</h1>
 		</div>
 		<div className="container text-center cardCharacters ">
 			<div className="row align-items-start ">
@@ -62,7 +62,7 @@ const Home = ({favorites, setFavorites}) => {
 		</div>
 		
 		<div className=" ">
-			<h1 className="text-center bg-gradient title-location fs-1 fw-semibolder text-capitalize mt-5">Localizaciones</h1>
+			<h1 className="text-center bg-gradient title-location fs-1 fw-semibolder text-capitalize mt-5">Locations</h1>
 		</div>
 		<div className="container text-center cardCharacters">
 			<div className="row align-items-start">

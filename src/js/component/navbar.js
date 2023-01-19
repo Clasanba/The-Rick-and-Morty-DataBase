@@ -28,7 +28,7 @@ export const Navbar = ({ favorites, deleteFavorites }) => {
 			<div className="me-2">
 				<div className="btn-group">
 					<button className="btn btnFavorite text-decoration-none fw-bold rounded-pill p-2 bg-gradient" disabled={favorites.length === 0} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Favoritos {favorites.length}
+						Favorites {favorites.length}
 					</button>
 					<ul className="dropdown-menu dropdown-menu-end luFavorite rounded rounded-3">
 						{
