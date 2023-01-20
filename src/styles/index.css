@@ -3,7 +3,7 @@
 }
 .bckgrnd-cards-charact{
     background-color: rgba(247, 232, 214, 0.433);
-    height: 260px;
+    height: 250px;
     color: rgb(247, 244, 240);
 }
 .bckgrnd-cards-locat{
@@ -16,10 +16,15 @@
     justify-content:end;
     font-size: medium;
 }
+.prueba{
+    display: block;
+    align-items: center;
+}
 .img-card{
     width: 40%;
-    margin-left: 30%;
-    margin-top:5%
+    margin-top:5%;
+    padding:1%;
+    background-color: rgb(84, 4, 67) ;
 }
 .text-cards{
     font-size: 1em;
@@ -34,10 +39,7 @@
 .text-card-extend{
     color: rgb(215, 44, 190);
 }
-prueba{
-    display: block;
-    align-items: center;
-}
+
 .img-card-extend{
     width: 50%;
     transition: transform .2s; 
@@ -57,7 +59,6 @@ prueba{
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: transparent;
-
 }
 .body-card{
     display: flex;
