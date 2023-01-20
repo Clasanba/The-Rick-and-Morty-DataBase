@@ -26,7 +26,6 @@ export const LocatExtend = ({location, character}) => {
         <>
             <div className="card bg-gradient m-5 box-card-extend">
                 <div className="row g-0 rounded-5">
-                    
                         <div className=" col-md-8 card-body">
                             <h5 className="fs-1 fw-bold text-white text-center"> {location.name} </h5>
                             <div className="d-flex justify-content-center"><p className="card-title text-card-extend me-1 fw-bold fs-4">Type</p><p className="text-white fw-bold fs-4">{location.type}</p></div>

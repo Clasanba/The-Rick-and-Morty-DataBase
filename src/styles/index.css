@@ -5,13 +5,11 @@
     background-color: rgba(247, 232, 214, 0.433);
     height: 260px;
     color: rgb(247, 244, 240);
-    
 }
 .bckgrnd-cards-locat{
     background-color: rgba(247, 232, 214, 0.433);
     height: 150px;
     color:  rgb(84, 4, 67);
-    
 }
 .btnLinks{
     display: flex;
@@ -29,9 +27,16 @@
 }
 .box-card-extend{
     background-color: rgb(84, 4, 67);
+    width: 90%;
+    margin-left: 5%;
+    
 }
 .text-card-extend{
     color: rgb(215, 44, 190);
+}
+prueba{
+    display: block;
+    align-items: center;
 }
 .img-card-extend{
     width: 50%;
@@ -40,7 +45,6 @@
 .img-card-extend:hover{
     transform: scale(1.5);
 }
-
 .icons{
     color: rgb(84, 4, 67);
 }
