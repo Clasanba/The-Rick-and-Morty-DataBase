@@ -10,7 +10,7 @@ export const CharaExtend = ({ character }) => {
       <div className="card bg-gradient m-5 box-card-extend" >
         <div className="row g-0 rounded-5" >
           <div className="col-md-4">
-            <img src={character.image} className="img-fluid rounded-5" alt="..." />
+            <img src={character.image} className="rounded rounded-4" alt="..." />
           </div>
           <div className="col-md-8  ">
             <div className="card-body ">

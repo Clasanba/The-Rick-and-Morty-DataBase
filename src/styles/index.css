@@ -31,8 +31,16 @@
     background-color: rgb(84, 4, 67);
 }
 .text-card-extend{
-    color: rgb(166, 13, 143);
+    color: rgb(215, 44, 190);
 }
+.img-card-extend{
+    width: 50%;
+    transition: transform .2s; 
+}
+.img-card-extend:hover{
+    transform: scale(1.5);
+}
+
 .icons{
     color: rgb(84, 4, 67);
 }

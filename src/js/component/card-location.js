@@ -29,15 +29,17 @@ export const LocatExtend = ({location, character}) => {
                     
                         <div className=" col-md-8 card-body">
                             <h5 className="fs-1 fw-bold text-white text-center"> {location.name} </h5>
-                            <div className="d-flex justify-content-center"><p className="card-title text-card-extend me-1 ">Type</p><p className="text-white fw-bold ">{location.type}</p></div>
-                            <div className="d-flex justify-content-center"><p className="card-title text-card-extend me-1 ">Dimension</p><p className="text-white fw-bold ">{location.dimension}</p></div>
-                            <ul className=" text-center card-title text-card-extend me-1" style={{listStyleType: 'none'}}>Residents
+                            <div className="d-flex justify-content-center"><p className="card-title text-card-extend me-1 fw-bold fs-4">Type</p><p className="text-white fw-bold fs-4">{location.type}</p></div>
+                            <div className="d-flex justify-content-center"><p className="card-title text-card-extend me-1 fw-bold fs-4">Dimension</p><p className="text-white fw-bold fs-4">{location.dimension}</p></div>
+                            <div className="d-flex justify-content-center mb-5"><p className="card-title text-card-extend me-1 fw-bold fs-4">Residents</p></div>
+                            <div class="container">
+                            <ul className=" row justify-content-evenly d-flex flex-wrap justify-content-evenly ms-5 " style={{listStyleType: 'none'}}>
                                     {location?.residents?.map((resident, i) =>
-                                   <li key={i} >
-                                        <a href={'/charextend/'+resident.id} className= "card-title text-decoration-none "><img alt={resident.name} src={resident.image}/></a>
+                                   <li key={i} className=" col-md-3 mb-4">
+                                        <a href={'/charextend/'+resident.id} className= " text-decoration-none "><img alt={resident.name} src={resident.image} className= " rounded rounded-3 img-card-extend "/></a>
                                     </li>)}
                             </ul>
-                            
+                            </div>
                         </div>
                     
                 </div>
