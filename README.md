@@ -24,8 +24,13 @@ Además puedes guardar tus favoritos para verlos más tarde (pinchando en :heart
 
 Puedes acceder a él desde cualquier dispositivo.
 
+<img src="src/img/Rick and Morty responsive.png">
 
-A continuación puedes consultar el readme original del template
+Si quieres probar como funciona:
+
+https://the-rick-and-morty-database.vercel.app/ 
+
+A continuación dejo el readme original para que puedas hacerlo.
 _____________________________________________________________________________________________________________________________
 # WebApp boilerplate with React JS
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
