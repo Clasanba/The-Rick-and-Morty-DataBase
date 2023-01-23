@@ -6,7 +6,7 @@ import { CharaExtend } from "../component/card-characters";
 
 const CharactersExtended = () => {
     const params = useParams();
-    const [charExtended, setcharextended] = useState({}); {/* todo lo relacionado con el apartado personajes */ } {/* llamada a la API */ } {/* actualización de la variable characters */ }
+    const [charExtended, setcharextended] = useState({});
     useEffect(
         () => {
             fetch("https://rickandmortyapi.com/api/character/" + params.id)
@@ -16,7 +16,7 @@ const CharactersExtended = () => {
                     console.log(data);
                 })
         }
-        , [params.id]); {/* [] para que se ejecute solo una vez cuando cargue la pagina */ }
+        , [params.id]); 
 
 
 

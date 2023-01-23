@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import layout from "../layout";
-import RickMortilogo from "../../img/Rick-Morti-logo.png";
 import "../../styles/index.css";
 import "../../styles/navBar.css";
 import Home from "../views/home.js";

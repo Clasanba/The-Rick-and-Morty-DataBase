@@ -19,7 +19,7 @@ const Home = ({favorites, setFavorites}) => {
 		setFavorites([...favorites])
 	}
 
-	const [characters, setCharacters] = useState([]);  {/* todo lo relacionado con el apartado personajes */ } {/* llamada a la API */} {/* actualización de la variable characters */}
+	const [characters, setCharacters] = useState([]);  
 	useEffect(
 		() => {
 			fetch("https://rickandmortyapi.com/api/character")  
@@ -29,10 +29,10 @@ const Home = ({favorites, setFavorites}) => {
 					console.log(data);
 				})
 		}
-		, []); {/* [] para que se ejecute solo una vez cuando cargue la pagina */}
+		, []); 
 
 
-	const [locations, setLocations] = useState([]); {/* todo lo relacionado con el apartado lugares */ }
+	const [locations, setLocations] = useState([]); 
 	useEffect(
 		() => {
 			fetch("https://rickandmortyapi.com/api/location")
@@ -46,34 +46,27 @@ const Home = ({favorites, setFavorites}) => {
 		, [])
 
 	return <div className="bg-gradient">
-		
-		<div className="">
-			<h1 className="text-center title-character fs-1 fw-semibolder bg-gradient pt-5 text-capitalize">Characters</h1>
-		</div>
-		<div className="container text-center">
-			<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3  ">
-			
-				{characters.map((character, index) => {
-					return <div className="col"> <CharactersHome isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
-				})}
-			
+				<div className="">
+					<h1 className="text-center title-character fs-1 fw-semibolder bg-gradient pt-5 text-capitalize">Characters</h1>
+				</div>
+				<div className="container text-center">
+					<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3  ">
+						{characters.map((character, index) => {
+							return <div className="col"> <CharactersHome isFavorite={favorites.includes(character)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} character={character} key={index} /></div>
+						})}
+					</div>
+				</div>
+				<div className=" ">
+					<h1 className="text-center bg-gradient title-location fs-1 fw-semibolder text-capitalize mt-5">Locations</h1>
+				</div>
+				<div className="container text-center cardCharacters">
+					<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+						{locations.map((location, index) => {
+							return <div className="col "><LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} /></div>
+						})}
+					</div>
+				</div>
 			</div>
-		
-		</div>
-		
-		<div className=" ">
-			<h1 className="text-center bg-gradient title-location fs-1 fw-semibolder text-capitalize mt-5">Locations</h1>
-		</div>
-		<div className="container text-center cardCharacters">
-			<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-
-				{locations.map((location, index) => {
-					return <div className="col "><LocationHome isFavorite={favorites.includes(location)} onAddFavorite={addFavorites} deleteFav={deleteFavorites} location={location} key={index} /></div>
-				})}
-			</div>
-		</div>
-		
-	</div>
 };
 
 export default Home

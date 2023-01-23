@@ -9,11 +9,11 @@ export const LocationHome = ({ location, onAddFavorite, isFavorite, deleteFav })
     return (<>
         <div className="card bckgrnd-cards-locat bg-gradient mt-5 rounded rounded-4">
             <div className="" >
-            <Link to={`/locextend/${location.id}`} className="text-decoration-none fs-3 icons">
-                <div className="card-title fs-3 bg-gradient mt-4 ms-2 ">
-                    <h5 className="fs-3 bg-gradient rounded rounded-4 title-card">{location.name}</h5>
-                </div>
-            </Link>
+                <Link to={`/locextend/${location.id}`} className="text-decoration-none fs-3 icons">
+                    <div className="card-title fs-3 bg-gradient mt-4 ms-2 ">
+                        <h5 className="fs-3 bg-gradient rounded rounded-4 title-card">{location.name}</h5>
+                    </div>
+                </Link>
             </div>
             <div className="d-flex px-4">
                 <div className="text-cards "><p className="fst-normal">{location.type}</p></div>

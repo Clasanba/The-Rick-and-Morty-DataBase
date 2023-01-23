@@ -6,7 +6,7 @@ import { LocatExtend } from "../component/card-location";
 
 const LocationsExtended = () => {
     const params = useParams();
-    const [locExtended, setlocextended] = useState({}); {/* todo lo relacionado con el apartado personajes */ } {/* llamada a la API */ } {/* actualización de la variable characters */ }
+    const [locExtended, setlocextended] = useState({}); 
     useEffect(
         () => {
             fetch("https://rickandmortyapi.com/api/location/" + params.id)
@@ -22,7 +22,7 @@ const LocationsExtended = () => {
                     setlocextended(data)
                 })
         }
-        , [params.id]); {/* [] para que se ejecute solo una vez cuando cargue la pagina */ }
+        , [params.id]); 
 
 
 

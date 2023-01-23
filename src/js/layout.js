@@ -44,7 +44,6 @@ const deleteFavorites = (characterOrLocation)=>{
 						</Route>
 					</Switch>
 					<Footer />
-				
 			</BrowserRouter>
 		</div>
 	);

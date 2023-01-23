@@ -1,21 +1,16 @@
 .cardCharacters{
     display: flex;
     justify-content:space-between;
-    
-    
 }
 .title-character{
      color: rgb(247, 244, 240);
      padding: 15px;
      width: 100%;
-     
-    
 }
 .title-location{
     color: rgb(247, 244, 240);
     padding: 15px;
     width: 82%;
     margin-left: 9%;
-   
 }
 
