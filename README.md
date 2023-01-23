@@ -18,7 +18,7 @@ Puedes ver la información de cada personaje o localización pinchando sobre el 
 
 Para volver a la página principal, sólo pincha en el nombre de la serie, en la esquina superior izquierda.
 
-Además puedes guardar tus favoritos para verlos más tarde (pinchando en :heart_eyes:). Para acceder a ellos, pincha en el botón superior derecho de la página. Desde ahí puedes acceder a ellos o borrarlos. También puedes borrarlos desde la card de cada personaje pinchando sobre :disappointed: .
+Además puedes guardar tus favoritos para verlos más tarde (pinchando en :heart_eyes:). Para acceder a ellos, pincha en el botón superior derecho de la página. Desde ahí puedes acceder a ellos o borrarlos. También puedes borrarlos desde la card de cada personaje pinchando sobre la carita :disappointed: .
 
 <img src="src/img/Rick and Morty favorites.png">
 
