@@ -1,10 +1,10 @@
 # The Rick and Morty Database
 
-Es una base de datos simplificada de la serie "Rick and Morty". Se ha creado con React, bootstrap/CSS y la Api: https://rickandmortyapi.com/.
+Base de datos simplificada de la serie "Rick and Morty". Se ha creado con React, bootstrap/CSS y la Api, https://rickandmortyapi.com/.
 
 Esta creada a partir del template de 4Geeks Academy React Advanced (puedes acceder a él más abajo).
 
-En ella vas a encontrar un home con acceso a cada personaje y localización de la serie.
+En la página principal tendrás acceso a los personajes y las localizaciones de la serie.
 
 <img src="src/img/Rick and Morty home I.png">
 
@@ -18,7 +18,7 @@ Puedes ver la información de cada personaje o localización pinchando sobre el 
 
 Para volver a la página principal, sólo pincha en el nombre de la serie, en la esquina superior izquierda.
 
-Además puedes guardar tus favoritos para verlos más tarde (pinchando en <span className="fa-regular fa-face-grin-hearts"></span>). Para acceder a ellos, pincha en el botón superior derecho de la página. Desde ahí puedes acceder a ellos o borrarlos. También puedes borrarlos desde la card de cada personaje pinchando sobre <span className="fa-regular fa-face-frown"></span>
+Además puedes guardar tus favoritos para verlos más tarde (pinchando en :heart_eyes:). Para acceder a ellos, pincha en el botón superior derecho de la página. Desde ahí puedes acceder a ellos o borrarlos. También puedes borrarlos desde la card de cada personaje pinchando sobre :disappointed: .
 
 <img src="src/img/Rick and Morty favorites.png">
 
