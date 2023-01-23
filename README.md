@@ -1,3 +1,16 @@
+# The Rick and Morty Database
+
+En este ejercicio, hemos creado una base de datos simplificada de la serie "Rick and Morty" a partir de la Api: https://rickandmortyapi.com/
+
+
+
+
+
+
+
+
+
+_____________________________________________________________________________________________________________________________
 # WebApp boilerplate with React JS
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
 
